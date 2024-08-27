@@ -36,7 +36,7 @@ def get_data():
     """Serve a static JSON file."""
     return app.send_static_file("data.json")
 
-@app.route('/decode-barcode', methods=['POST'])
+@app.route("/decode-barcode")
 def decode_barcode():
     data = request.get_json()
     
