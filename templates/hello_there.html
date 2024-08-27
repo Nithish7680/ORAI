@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello There</title>
+</head>
+<body>
+    <h1>Hello, {{ name if name else "Stranger" }}!</h1>
+    <p>Current date and time: {{ date.strftime("%A, %d %B, %Y at %X") }}</p>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/about/">About</a> | 
+        <a href="/contact/">Contact</a> | 
+        <a href="/hello/">Say Hello</a>
+    </nav>
+</body>
+</html>
