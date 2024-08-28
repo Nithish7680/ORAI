@@ -1,11 +1,5 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, render_template
 from datetime import datetime
-import requests
-from PIL import Image
-import cv2
-import numpy as np
-from pyzbar.pyzbar import decode
-from io import BytesIO
 
 app = Flask(__name__)
 
