@@ -86,7 +86,6 @@ def preprocess_image(image):
     resized = cv.resize(blurred, None, fx=1.0, fy=1.0, interpolation=cv.INTER_CUBIC)
     return resized
 
-# Initialize EasyOCR reader
 reader = easyocr.Reader(['en'])
 
 @app.route('/extract-text', methods=['POST'])
